@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "github-actions-tests"
+version = "0.1.0"
+description = ""
+authors = ["hotratx <mgviero@gmail.com>"]
+readme = "README.md"
+packages = [{include = "github_actions_tests"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
