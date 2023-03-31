@@ -11,8 +11,8 @@ on:
   pull_request:
     types:
       - closed
-  push:
-
+  # push:
+  #   branches: [develop]
 
 jobs:
   if_merged:
