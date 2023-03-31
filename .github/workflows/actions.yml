@@ -2,12 +2,12 @@ name: Actions Workflow
 
 # asdf
 on:
-  pull_request_review:
-    types: [submitted]
+  pull_request:
+    types: [labeled]
 
 jobs:
-
   run-github-actions:
+    if: contains( github.event.label.name, 'deploy')
     runs-on: ubuntu-latest
     steps:
       - name: List Files
