@@ -3,7 +3,7 @@ name: Actions Workflow
 # asdf
 on:
   pull_request:
-    types: [closed]
+    types: [review_requested]
 
 jobs:
 
