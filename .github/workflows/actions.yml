@@ -4,8 +4,10 @@ name: Actions Workflow
 on:
   # pull_request:
   #   types: [labeled]
-  push:
-    branches: [main]
+  # push:
+  #   branches: [main]
+  merge_group:
+    types: [checks_requested]
 
 
 jobs:
