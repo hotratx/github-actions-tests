@@ -1,8 +1,12 @@
 name: Actions Workflow
 
-on: [push]
+# asdf
+on:
+  pull_request:
+    types: [review_requested]
 
 jobs:
+
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
