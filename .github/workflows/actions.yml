@@ -3,7 +3,7 @@ name: Actions Workflow
 # asdf
 on:
   pull_request:
-    types: [review_requested]
+    types: [auto_merge_enabled]
 
 jobs:
 
