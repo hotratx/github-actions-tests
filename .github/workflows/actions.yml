@@ -1,8 +1,9 @@
 name: Actions Workflow
 
 # asdf
-
-on: [pull_request]
+on:
+  pull_request:
+    types: [auto_merge_enabled]
 
 jobs:
 
