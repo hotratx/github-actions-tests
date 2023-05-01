@@ -18,8 +18,8 @@ jobs:
           MYSECRET: ${{ secrets.SERVER_SSH_KEY }}
         with:
             password: ${{ secrets.SERVER_SSH_KEY }}
-        run: |
-          echo $MYSECRET
+            script: |
+              echo $MYSECRET
 
 #   if_merged:
 #     if: github.event.pull_request.merged == true
