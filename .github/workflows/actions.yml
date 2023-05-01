@@ -10,16 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         env: 
           MYSECRET: ${{ secrets.SERVER_SSH_KEY }}
-        with:
-            password: ${{ secrets.SERVER_SSH_KEY }}
-            script: |
-              whoami
-              echo $PATH
-              ls
-              echo "VAI QUE COLA"
+        run: |
+          whoami
+          echo $PATH
+          ls
+          echo "VAI QUE COLA"
 
 
 #   if_merged:
