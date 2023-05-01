@@ -14,12 +14,12 @@ jobs:
 
       - name: Access Server Service
         uses: appleboy/ssh-action@master
-        env: 
-          MYSECRET: ${{ secrets.SERVER_SSH_KEY }}
+        # env: 
+        #   MYSECRET: ${{ secrets.SERVER_SSH_KEY }}
         with:
             password: ${{ secrets.SERVER_SSH_KEY }}
             script: |
-              echo $MYSECRET
+              echo $PATH
 
 #   if_merged:
 #     if: github.event.pull_request.merged == true
