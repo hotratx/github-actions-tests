@@ -19,6 +19,7 @@ jobs:
         with:
             password: ${{ secrets.SERVER_SSH_KEY }}
             script: |
+              whoami
               echo $PATH
 
 #   if_merged:
