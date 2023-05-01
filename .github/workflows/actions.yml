@@ -18,6 +18,9 @@ jobs:
             script: |
               whoami
               echo $PATH
+              ls
+              echo "VAI QUE COLA"
+
 
 #   if_merged:
 #     if: github.event.pull_request.merged == true
